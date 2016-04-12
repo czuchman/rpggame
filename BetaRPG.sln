@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{0578035B-2235-1F96-82CA-A5C5F74A3907}") = "BetaRPG", "Assembly-CSharp.csproj", "{7D702443-8ACE-9D12-6473-DB3C31854BA4}"
+EndProject
+Project("{0578035B-2235-1F96-82CA-A5C5F74A3907}") = "BetaRPG", "Assembly-CSharp-Editor.csproj", "{51D374ED-775C-1EFB-7B46-282C5C2CE708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D702443-8ACE-9D12-6473-DB3C31854BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D702443-8ACE-9D12-6473-DB3C31854BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D702443-8ACE-9D12-6473-DB3C31854BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D702443-8ACE-9D12-6473-DB3C31854BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D374ED-775C-1EFB-7B46-282C5C2CE708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D374ED-775C-1EFB-7B46-282C5C2CE708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D374ED-775C-1EFB-7B46-282C5C2CE708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D374ED-775C-1EFB-7B46-282C5C2CE708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
