@@ -6,7 +6,7 @@ public class Wolfanimation : MonoBehaviour {
 
 	public Animator anim;
 
-	public Vector3 old_pos;
+	public Vector2 old_pos;
 
 	void Start () {
 		anim = GetComponent<Animator> ();

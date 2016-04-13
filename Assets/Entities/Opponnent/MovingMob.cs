@@ -4,9 +4,9 @@
 	public class MovingMob : MonoBehaviour
 	{
 		
-		public Vector3 farEnd;
-		private Vector3 frometh;
-		private Vector3 untoeth;
+		public Vector2 farEnd;
+		private Vector2 frometh;
+		private Vector2 untoeth;
 		private float secondsForOneLength = 5f;
 
 		public GameObject target;
@@ -24,7 +24,7 @@
 
 		void Update()
 		{
-			transform.position = Vector3.Lerp(frometh, untoeth,
+			transform.position = Vector2.Lerp(frometh, untoeth,
 				Mathf.SmoothStep(0f,1f,
 					Mathf.PingPong(Time.time/secondsForOneLength, 1f)
 				) ); 
