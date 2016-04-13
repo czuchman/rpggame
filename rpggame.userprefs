@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Animations\WolfWalking\Wolfanimation.cs">
     <Files>
-      <File FileName="Assets\Entities\Opponnent\MovingMob.cs" Line="22" Column="9" />
-      <File FileName="Assets\Animations\WolfWalking\Wolfanimation.cs" Line="61" Column="1" />
+      <File FileName="Assets\Animations\WolfWalking\Wolfanimation.cs" Line="67" Column="3" />
+      <File FileName="Assets\Entities\Opponnent\MovingMob.cs" Line="15" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

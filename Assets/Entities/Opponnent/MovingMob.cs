@@ -3,15 +3,18 @@
 
 	public class MovingMob : MonoBehaviour
 	{
-		public Transform farEnd;
+		
+		public Vector3 farEnd;
 		private Vector3 frometh;
 		private Vector3 untoeth;
 		private float secondsForOneLength = 5f;
 
 		void Start()
 		{
+		farEnd.x = -5;
+		farEnd.y = 2;
 			frometh = transform.position;
-			untoeth = farEnd.position;
+			untoeth = farEnd;
 		}
 
 		void Update()
