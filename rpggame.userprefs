@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Animations\WolfWalking\Wolfanimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Entities\Opponnent\MovingMob.cs">
     <Files>
-      <File FileName="Assets\Animations\WolfWalking\Wolfanimation.cs" Line="67" Column="3" />
-      <File FileName="Assets\Entities\Opponnent\MovingMob.cs" Line="15" Column="15" />
+      <File FileName="Assets\Entities\Opponnent\MovingMob.cs" Line="31" Column="5" />
+      <File FileName="Assets\Animations\WolfWalking\Wolfanimation.cs" Line="67" Column="1" />
+      <File FileName="Assets\Entities\Opponnent\AggroMob.cs" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

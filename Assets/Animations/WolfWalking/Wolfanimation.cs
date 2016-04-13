@@ -41,7 +41,7 @@ public class Wolfanimation : MonoBehaviour {
 
 		else anim.SetBool("Down", false);
 
-	/*
+	
 		if (old_pos.y < anim.transform.position.y)
 		{
 			anim.SetBool("Up", true);
@@ -64,7 +64,7 @@ public class Wolfanimation : MonoBehaviour {
 		}
 
 		else anim.SetBool("Left", false);
-*/
+
 
 
 		old_pos.x = anim.transform.position.x;
