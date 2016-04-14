@@ -43,11 +43,15 @@ public class MovingMob2 : Entity
         //transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Player").transform.position, 0.05F);
         if (StartFollow)
         {
-            transform.position = Vector3.MoveTowards(transform.position, CollisionTarget.transform.position, 0.05F);
+            transform.position = Vector3.MoveTowards(transform.position, CollisionTarget.transform.position, 0.04F);
 
 			if (Vector2.Distance (GetComponent<Rigidbody2D>().transform.position, attacking.transform.position) <= distance && canAttack) {
 				attackEntity ();
 				StartCoroutine (waitForAttack ());
+			}
+
+			if (Vector2.Distance (GetComponent<Rigidbody2D> ().transform.position, attacking.transform.position) > distance*5) {
+				StartFollow = false;
 			}
         }
         else
