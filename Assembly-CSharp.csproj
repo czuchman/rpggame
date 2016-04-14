@@ -50,6 +50,7 @@
      <Compile Include="Assets\Entities\Opponnent\AggroMob.cs" />
      <Compile Include="Assets\Entities\Opponnent\AttackingMob.cs" />
      <Compile Include="Assets\Entities\Opponnent\MovingMob.cs" />
+     <Compile Include="Assets\Entities\Opponnent\MovingMob2.cs" />
      <Compile Include="Assets\Entities\Player\Player.cs" />
      <Compile Include="Assets\Entities\Player\PlayerAnimation.cs" />
      <Compile Include="Assets\Entities\Player\PlayerMovement.cs" />
