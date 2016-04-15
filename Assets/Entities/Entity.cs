@@ -4,6 +4,7 @@ using System.Collections;
 public class Entity : MonoBehaviour {
 
 	public float health;
+	public float energy;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,12 @@ public class Entity : MonoBehaviour {
 	public void takeHealth(int amount){
 
 		health = health - amount;
+
+	}
+
+	public void takeEnergy(int amount){
+
+		energy = energy - amount;
 
 	}
 }

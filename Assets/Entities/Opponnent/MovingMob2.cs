@@ -101,6 +101,7 @@ public class MovingMob2 : Entity
 		int take = Random.Range (1, 20);
 		attacking.takeHealth (take);
 		healthBar.takeHealth (take);
+
 	}
 
 	IEnumerator waitForAttack(){
