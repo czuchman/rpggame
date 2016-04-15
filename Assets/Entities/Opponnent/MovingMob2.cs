@@ -18,6 +18,11 @@ public class MovingMob2 : Entity
 
 	public GameObject attackingg;
 	public Entity attacking;
+
+	public GameObject healthBarr;
+	public Entity healthBar;
+
+
 	public int distance;
 
 	public int x;
@@ -37,6 +42,11 @@ public class MovingMob2 : Entity
 		if (attackingg == null) {
 			attackingg = GameObject.FindGameObjectWithTag ("Player");
 			attacking = attackingg.GetComponent<Entity>();
+		}
+
+		if (healthBarr == null) {
+			healthBarr = GameObject.FindGameObjectWithTag ("HealthBar");
+			healthBar = healthBarr.GetComponent<Entity>();
 		}
 
     }
@@ -90,6 +100,7 @@ public class MovingMob2 : Entity
 	public void attackEntity(){
 		int take = Random.Range (1, 20);
 		attacking.takeHealth (take);
+		healthBar.takeHealth (take);
 	}
 
 	IEnumerator waitForAttack(){

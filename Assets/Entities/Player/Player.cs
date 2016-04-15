@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Player : Entity {
 
+
+
 	// Use this for initialization
 	void Start () {
 	

@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Animations\HPcontroller.cs" />
      <Compile Include="Assets\Animations\WolfWalking\Wolfanimation.cs" />
      <Compile Include="Assets\Entities\Entity.cs" />
      <Compile Include="Assets\Entities\Opponnent\AggroMob.cs" />
