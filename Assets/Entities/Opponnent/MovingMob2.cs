@@ -20,13 +20,16 @@ public class MovingMob2 : Entity
 	public Entity attacking;
 	public int distance;
 
+	public int x;
+	public int y;
+
 
 	private bool canAttack;
 
     void Start()
     {
-        farEnd.x = -5;
-        farEnd.y = 2;
+		farEnd.x = x;
+        farEnd.y = y;
         frometh = transform.position;
         untoeth = farEnd;
 
