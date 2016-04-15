@@ -19,12 +19,17 @@ public class Entity : MonoBehaviour {
 	public void takeHealth(int amount){
 
 		health = health - amount;
+		if(health>100){
+			health = 100;
+		}
 
 	}
 
 	public void takeEnergy(int amount){
 
 		energy = energy - amount;
-
+		if(energy > 100 ){
+			energy = 100 ;
+		}
 	}
 }
