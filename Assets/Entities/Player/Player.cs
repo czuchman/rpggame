@@ -3,14 +3,25 @@ using System.Collections;
 
 public class Player : Entity {
 
+	private static Location location;
 
 
-	// Use this for initialization
+	public static Location GetLocation {
+		get { return location; }
+	}
+
+
+	//this class will have references to your inventory
+	//stats
+	//quests
+
+
+
 	void Start () {
 	
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
 	
 	}
