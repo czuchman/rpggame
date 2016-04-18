@@ -11,7 +11,12 @@ public class PlayerMovement : Entity {
 	public bool isWalking = false;
 	public bool canLoseEnergy = true;
 
+	//public bool canMove = true;
+
 	void Start () {
+
+
+
 		if (EnergyBarr == null) {
 			
 			EnergyBarr = GameObject.FindGameObjectWithTag ("HealthBar");
@@ -22,6 +27,10 @@ public class PlayerMovement : Entity {
 	}
 	
 	void Update () {
+
+		if (!canMove) {
+			return;
+		}
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
@@ -55,6 +64,8 @@ public class PlayerMovement : Entity {
     }
 
 
+
+
 	void loseEnergy(int amount){
 		
 		EnergyBar.takeEnergy (amount);
@@ -69,4 +80,6 @@ public class PlayerMovement : Entity {
 		yield return new WaitForSeconds (5);
 		canLoseEnergy = true;
 	}
+
+
 }

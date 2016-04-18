@@ -1,20 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Quests\Objectives\LocationObjective.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Texts\TextBoxManager.cs">
     <Files>
-      <File FileName="Assets\Quests\Objectives\LocationObjective.cs" Line="49" Column="30" />
+      <File FileName="Assets\Entities\Player\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\Objects\Pill.cs" Line="1" Column="1" />
       <File FileName="Assets\Quests\Test.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Quest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\QuestObjective.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\QuestIdentifier.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\QuestText.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Objectives\CollectionObjective.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Interfaces\IQuest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Interfaces\IQuestObjective.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Interfaces\IQuestIdentifier.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Interfaces\IQuestText.cs" Line="1" Column="1" />
-      <File FileName="Assets\Locations\Location.cs" Line="32" Column="2" />
-      <File FileName="Assets\Entities\Player\Player.cs" Line="16" Column="10" />
+      <File FileName="Assets\Texts\FirstQuest.txt" Line="4" Column="37" />
+      <File FileName="Assets\Texts\TextBoxManager.cs" Line="101" Column="20" />
+      <File FileName="Assets\Texts\ActivateText.cs" Line="38" Column="4" />
+      <File FileName="Assets\Entities\Player\PlayerMovement.cs" Line="14" Column="4" />
+      <File FileName="Assets\Entities\Entity.cs" Line="42" Column="9" />
+      <File FileName="Assets\Entities\Opponnent\AttackingMob.cs" Line="43" Column="31" />
+      <File FileName="Assets\Entities\Opponnent\MovingMob2.cs" Line="79" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

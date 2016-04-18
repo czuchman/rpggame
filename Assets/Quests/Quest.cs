@@ -51,7 +51,7 @@ namespace QuestSystem{
 
 		private bool IsComplete(){
 			for(int i = 0; i < objectives.Count; i++){
-				if(!objectives[i].IsComplete false && objectives[i].IsBonus == false){
+				if(!objectives[i].IsComplete && objectives[i].IsBonus == false){
 					return false;
 				}
 			}

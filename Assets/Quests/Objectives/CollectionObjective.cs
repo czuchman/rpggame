@@ -98,7 +98,9 @@ namespace QuestSystem{
 
 		public void UpdateProgress()
 		{
-			throw new NotImplementedException();
+
+			currentAmount = currentAmount + 1;
+
 		}
 
 		public void CheckProgress()

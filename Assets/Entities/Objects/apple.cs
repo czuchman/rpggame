@@ -36,7 +36,7 @@ public class apple : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		print("Collision");
+		//print("Collision");
 
 		// Si le collider en question est celui du joueur
 		if (other.name == "Player")
@@ -44,7 +44,7 @@ public class apple : MonoBehaviour {
 			EnergyBar.takeEnergy (-20);
 			healthBar.takeHealth (-20);
 
-			print("it is a player");
+			//print("it is a player");
 			Destroy (gameObject);
 
 		}

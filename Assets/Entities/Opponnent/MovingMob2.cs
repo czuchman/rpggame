@@ -78,12 +78,12 @@ public class MovingMob2 : Entity
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("Collision");
+       // print("Collision");
         aggro = true;
         // Si le collider en question est celui du joueur
         if (other.name == "Player")
         {
-            print("it is a player");
+            //print("it is a player");
             CollisionTarget = other.gameObject;
             StartFollow = true;
             

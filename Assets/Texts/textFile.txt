@@ -1,0 +1,4 @@
+First text file
+it's a test
+
+it should work

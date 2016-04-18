@@ -6,6 +6,8 @@ public class Entity : MonoBehaviour {
 	public float health;
 	public float energy;
 
+	public bool canMove;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -31,5 +33,13 @@ public class Entity : MonoBehaviour {
 		if(energy > 100 ){
 			energy = 100 ;
 		}
+	}
+
+	public void stopMoving(){
+		canMove = false;
+	}
+
+	public void startMoving(){
+		canMove = true;
 	}
 }
