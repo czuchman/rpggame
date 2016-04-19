@@ -1,17 +1,21 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Texts\TextBoxManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Texts\ActivateText.cs">
     <Files>
+      <File FileName="Assets\Quests\Test.cs" Line="71" Column="33" />
+      <File FileName="Assets\Texts\TextBoxManager.cs" Line="141" Column="37" />
+      <File FileName="Assets\Texts\ActivateText.cs" Line="79" Column="23" />
+      <File FileName="Assets\Quests\Objectives\CollectionObjective.cs" Line="19" Column="1" />
+      <File FileName="Assets\Quests\Quest.cs" Line="1" Column="1" />
       <File FileName="Assets\Entities\Player\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Entities\Objects\Pill.cs" Line="1" Column="1" />
-      <File FileName="Assets\Quests\Test.cs" Line="1" Column="1" />
-      <File FileName="Assets\Texts\FirstQuest.txt" Line="4" Column="37" />
-      <File FileName="Assets\Texts\TextBoxManager.cs" Line="101" Column="20" />
-      <File FileName="Assets\Texts\ActivateText.cs" Line="38" Column="4" />
+      <File FileName="Assets\Texts\FirstQuest.txt" Line="1" Column="1" />
       <File FileName="Assets\Entities\Player\PlayerMovement.cs" Line="14" Column="4" />
-      <File FileName="Assets\Entities\Entity.cs" Line="42" Column="9" />
-      <File FileName="Assets\Entities\Opponnent\AttackingMob.cs" Line="43" Column="31" />
-      <File FileName="Assets\Entities\Opponnent\MovingMob2.cs" Line="79" Column="26" />
+      <File FileName="Assets\Entities\Entity.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\Opponnent\AttackingMob.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\Opponnent\MovingMob2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Entities\Objects\SpawnApple.cs" Line="4" Column="40" />
+      <File FileName="Assets\Texts\FinishFirstQuest.txt" Line="2" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

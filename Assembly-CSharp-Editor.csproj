@@ -63,7 +63,9 @@
      <None Include="Assets\Texts\FirstQuest.txt" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
+     <None Include="Assets\Texts\thanks.txt" />
      <None Include="Assets\test.txt" />
+     <None Include="Assets\Texts\FinishFirstQuest.txt" />
      <None Include="Assets\Tiled2Unity\License.txt" />
      <None Include="Assets\Tiled2Unity\Imported\testmap.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />

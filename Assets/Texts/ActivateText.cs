@@ -4,7 +4,10 @@ using System.Collections;
 public class ActivateText : MonoBehaviour {
 
 
-	public TextAsset theText;
+	public TextAsset firstText;
+	public TextAsset secondText;
+	private TextAsset currentText;
+	public int currentTextID;
 
 	public int startLine;
 	public int endLine;
@@ -19,15 +22,20 @@ public class ActivateText : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		currentTextID = 1;
+		//currentText = firstText;
 		theTextBox = FindObjectOfType<TextBoxManager> ();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		chooseText ();
 		if (waitForPress && Input.GetKeyDown (KeyCode.J)) {
 
-			theTextBox.ReloadScript (theText);
+			currentTextID++;
+
+			theTextBox.ReloadScript (currentText);
 			theTextBox.currentLine = startLine;
 			theTextBox.endAtLine = endLine;
 			theTextBox.EnableTextBox ();
@@ -50,7 +58,7 @@ public class ActivateText : MonoBehaviour {
 				return;
 			}
 
-			theTextBox.ReloadScript (theText);
+			theTextBox.ReloadScript (currentText);
 			theTextBox.currentLine = startLine;
 			theTextBox.endAtLine = endLine;
 			theTextBox.EnableTextBox ();
@@ -64,6 +72,16 @@ public class ActivateText : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other){
 		if (other.name == "Player") {
 			waitForPress = false;
+		}
+	}
+
+	public void chooseText(){
+		if (currentTextID == 1) {
+			currentText = firstText;
+		}
+
+		if (currentTextID == 2) {
+			currentText = secondText;
 		}
 	}
 }

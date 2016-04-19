@@ -37,7 +37,12 @@ namespace QuestSystem{
 			currentAmount = 0;
 			isBonus = bonus;
 			CheckProgress ();
+
+
 		}
+
+
+
 
 		public string Title
 		{

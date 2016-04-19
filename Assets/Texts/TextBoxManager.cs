@@ -28,6 +28,14 @@ public class TextBoxManager : Entity {
 
 	public bool stopPlayerMovement;
 
+	public bool isTyping = false;
+	private bool cancelTyping = false;
+
+	public float typeSpeed;
+
+
+
+
 
 	void Start () {
 
@@ -68,9 +76,22 @@ public class TextBoxManager : Entity {
 			theText.text = textLines [currentLine];
 
 			if (Input.GetKeyDown (KeyCode.Return) && currentLine < endAtLine) {
+			/*	if (!isTyping) {
+					currentLine += 1;
+					currentLine2 += 1;
+				} else {
+					StartCoroutine (TextScroll (textLines [currentLine]));
+				}*/
+
 				currentLine += 1;
 				currentLine2 += 1;
 			}
+
+			/*
+			if (isTyping && !cancelTyping) {
+				cancelTyping = true;
+			}
+			*/
 
 			if (Input.GetKeyDown (KeyCode.Return) && currentLine == endAtLine) {
 				currentLine2 += 1;
@@ -79,7 +100,14 @@ public class TextBoxManager : Entity {
 			if (currentLine2 == currentLine + 2) {
 				DisableTextBox ();
 				endOfText = true;
+				currentLine = 0;
+				currentLine2 = 0;
 			}
+		}
+
+		if (endOfText) {
+			playerr.GetComponent<Test> ().enabled = true;
+			endOfText = false;
 		}
 			
 	}
@@ -90,9 +118,9 @@ public class TextBoxManager : Entity {
 		isActive = true;
 
 		if (stopPlayerMovement) {
-			print ("stop movement");
+			//print ("stop movement");
 			player.stopMoving();
-			player.canMove = false;
+			//player.canMove = false;
 		}
 	}
 
@@ -105,9 +133,30 @@ public class TextBoxManager : Entity {
 
 
 	public void ReloadScript(TextAsset theText){
-		if(theText != null){
+		//print ("reload");
+		if (theText != null) {
+			//print ("not null");
 			textLines = new String[1];
 			textLines = (theText.text.Split ('\n'));
+			endAtLine = textLines.Length - 1;
+		} else {
+			print (" text null ...?");
 		}
+	}
+
+
+	private IEnumerator TextScroll (string lineOfText){
+		int letter = 0;
+		theText.text = "";
+		isTyping = true;
+		cancelTyping = false;
+		while (isTyping && !cancelTyping && (letter < lineOfText.Length - 1)) {
+			theText.text += lineOfText [letter];
+			letter += 1;
+			yield return new WaitForSeconds (typeSpeed);
+		}
+		theText.text = lineOfText;
+		isTyping = false;
+		cancelTyping = false;
 	}
 }
