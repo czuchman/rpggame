@@ -76,8 +76,7 @@ public class MovingMob2 : Entity
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
+    void OnTriggerEnter2D(Collider2D other){
        // print("Collision");
         aggro = true;
         // Si le collider en question est celui du joueur
@@ -89,9 +88,18 @@ public class MovingMob2 : Entity
             
         }
 
+		if (other.tag == "Bullet")
+		{
+			
+			Destroy (gameObject);
 
+		}
 
     }
+
+
+
+
 
 	public void die(){
 
