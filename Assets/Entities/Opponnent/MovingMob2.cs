@@ -91,7 +91,7 @@ public class MovingMob2 : Entity
 		if (other.tag == "Bullet")
 		{
 			
-			Destroy (gameObject);
+			//Destroy (gameObject);
 
 		}
 

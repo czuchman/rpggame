@@ -24,12 +24,12 @@ public class bullet : MonoBehaviour {
 		//print("Collision");
 
 		// Si le collider en question est celui du joueur
-		if (other.tag == "Wolf")
+		if (other.tag == "KillWolf")
 		{
 
 
 
-			//Destroy (gameObject);
+			Destroy (gameObject);
 
 		}
 
