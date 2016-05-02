@@ -93,6 +93,7 @@
      <None Include="Assets\test.txt" />
      <None Include="Assets\Texts\FinishFirstQuest.txt" />
      <None Include="Assets\Tiled2Unity\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Forrest.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\testmap.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
