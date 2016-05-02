@@ -84,4 +84,15 @@ public class ActivateText : MonoBehaviour {
 			currentText = secondText;
 		}
 	}
+
+
+
+	void OnMouseDown(){
+		currentTextID++;
+
+		theTextBox.ReloadScript (currentText);
+		theTextBox.currentLine = startLine;
+		theTextBox.endAtLine = endLine;
+		theTextBox.EnableTextBox ();
+	}
 }

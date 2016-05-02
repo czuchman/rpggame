@@ -75,7 +75,7 @@ public class TextBoxManager : Entity {
 		if (!endOfText) {
 			theText.text = textLines [currentLine];
 
-			if (Input.GetKeyDown (KeyCode.Return) && currentLine < endAtLine) {
+			if (Input.GetMouseButtonDown(0) && currentLine < endAtLine) {
 			/*	if (!isTyping) {
 					currentLine += 1;
 					currentLine2 += 1;
@@ -93,7 +93,7 @@ public class TextBoxManager : Entity {
 			}
 			*/
 
-			if (Input.GetKeyDown (KeyCode.Return) && currentLine == endAtLine) {
+			if (Input.GetMouseButtonDown(0) && currentLine == endAtLine) {
 				currentLine2 += 1;
 			}
 
@@ -107,6 +107,7 @@ public class TextBoxManager : Entity {
 
 		if (endOfText) {
 			playerr.GetComponent<Test> ().enabled = true;
+			//playerr.GetComponent<Test> ().
 			endOfText = false;
 		}
 			

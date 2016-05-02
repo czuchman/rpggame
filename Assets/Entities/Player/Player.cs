@@ -4,7 +4,7 @@ using System.Collections;
 public class Player : Entity {
 
 	private static Location location;
-
+	public bool readyToSpeak;
 
 	public static Location GetLocation {
 		get { return location; }

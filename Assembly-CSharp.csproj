@@ -59,6 +59,7 @@
      <Compile Include="Assets\Entities\Opponnent\MovingMob2.cs" />
      <Compile Include="Assets\Entities\Player\Player.cs" />
      <Compile Include="Assets\Entities\Player\PlayerAnimation.cs" />
+     <Compile Include="Assets\Entities\Player\PlayerFollowMouse.cs" />
      <Compile Include="Assets\Entities\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Entities\Player\Shooting.cs" />
      <Compile Include="Assets\Locations\Location.cs" />
