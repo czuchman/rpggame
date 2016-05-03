@@ -45,6 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\InventoryMaster\Editor\CraftSystemEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\EquipmentSystemEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\HotbarEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\IM_Manager.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\InventoryDesignEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\InventoryEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\StorageInventoryEditor.cs" />
+     <Compile Include="Assets\InventoryMaster\Editor\TooltipEditor.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\CustomTiledImporterAttribute.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ICustomTiledImporter.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Material.cs" />
@@ -64,6 +72,7 @@
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
      <None Include="Assets\Texts\thanks.txt" />
+     <None Include="Assets\InventoryMaster\readme.txt" />
      <None Include="Assets\test.txt" />
      <None Include="Assets\Texts\FinishFirstQuest.txt" />
      <None Include="Assets\Tiled2Unity\License.txt" />
