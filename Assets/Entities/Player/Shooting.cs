@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shooting : MonoBehaviour {
+public class Shooting : PlayerFollowMouse {
 
 	public GameObject bullet;
 
@@ -16,13 +16,13 @@ public class Shooting : MonoBehaviour {
 	void Update () {
 	
 
-		if(Input.GetKeyDown (KeyCode.Space)){
+		if(Input.GetKeyDown (KeyCode.Space) && (nbBullet > 0)){
 			
 			Vector2 position = new Vector2 (-2.0F, 2.0F);
 
 			GameObject obj = Instantiate (bullet, position, Quaternion.identity) as GameObject;
 
-
+			nbBullet = nbBullet - 1;
 		}
 
 	}

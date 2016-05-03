@@ -6,10 +6,14 @@ public class bullet : MonoBehaviour {
 	private Rigidbody2D myBody;
 	private float speed = 5f;
 
+	public bool isDestroy;
+
 	// Use this for initialization
 	void Awake () {
 		myBody = GetComponent<Rigidbody2D> ();
-		Destroy (gameObject, 1.6F);
+		if (isDestroy) {
+			Destroy (gameObject, 1.6F);
+		}
 	}
 	
 	// Update is called once per frame

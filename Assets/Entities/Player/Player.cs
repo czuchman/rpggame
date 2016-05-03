@@ -5,6 +5,7 @@ public class Player : Entity {
 
 	private static Location location;
 	public bool readyToSpeak;
+	public int nbBullet;
 
 	public static Location GetLocation {
 		get { return location; }
@@ -19,6 +20,7 @@ public class Player : Entity {
 
 	void Start () {
 	
+
 	}
 	
 

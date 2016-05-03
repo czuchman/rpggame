@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerFollowMouse : Entity
 {
@@ -24,6 +25,8 @@ public class PlayerFollowMouse : Entity
 	private Vector3 targetPos2;
 
 
+	public int nbBullet;
+	public Text theText;
 
 	void Start() {
 
@@ -40,6 +43,8 @@ public class PlayerFollowMouse : Entity
 	}
 
 	void Update () {
+
+		theText.text = nbBullet.ToString();
 
 		if (!canMove) {
 			return;
@@ -62,10 +67,10 @@ public class PlayerFollowMouse : Entity
 		}
 
 
-		if (Input.GetMouseButtonDown(1)){
+		if (Input.GetMouseButtonDown(1) && (nbBullet > 0)){
 
 
-
+			nbBullet--;
 
 			targetPos2 = Input.mousePosition;
 			targetPos2.z = 0.0f;
@@ -181,5 +186,18 @@ public class PlayerFollowMouse : Entity
 		canLoseEnergy = false;
 		yield return new WaitForSeconds (5);
 		canLoseEnergy = true;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		
+		if (other.tag == "PickBullet")
+		{
+			nbBullet++;
+
+		}
+
+
+
 	}
 }

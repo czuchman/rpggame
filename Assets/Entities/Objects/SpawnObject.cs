@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnApple : MonoBehaviour {
+public class SpawnObject : MonoBehaviour {
 
 
 	public GameObject prefab;
