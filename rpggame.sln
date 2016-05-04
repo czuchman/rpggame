@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{D3BB4AE0-409E-CF9B-C0FB-FE1474067ECC}") = "rpggame", "Assembly-CSharp-firstpass.csproj", "{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}"
+EndProject
 Project("{D3BB4AE0-409E-CF9B-C0FB-FE1474067ECC}") = "rpggame", "Assembly-CSharp.csproj", "{FB47C93F-FE21-5D6E-40D1-9A5018F91797}"
 EndProject
 Project("{D3BB4AE0-409E-CF9B-C0FB-FE1474067ECC}") = "rpggame", "Assembly-CSharp-Editor.csproj", "{DACEFEAF-EC38-E71A-6D76-A276B62E19E7}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB47C93F-FE21-5D6E-40D1-9A5018F91797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB47C93F-FE21-5D6E-40D1-9A5018F91797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB47C93F-FE21-5D6E-40D1-9A5018F91797}.Release|Any CPU.ActiveCfg = Release|Any CPU
