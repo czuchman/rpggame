@@ -113,6 +113,7 @@
      <Compile Include="Assets\Quests\QuestObjective.cs" />
      <Compile Include="Assets\Quests\QuestText.cs" />
      <Compile Include="Assets\Quests\Test.cs" />
+     <Compile Include="Assets\Scenes\TitleScreen.cs" />
      <Compile Include="Assets\Texts\ActivateText.cs" />
      <Compile Include="Assets\Texts\TextBoxManager.cs" />
      <Compile Include="Assets\Texts\TextImporter.cs" />
