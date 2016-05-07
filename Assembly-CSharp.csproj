@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Animations\HPcontroller.cs" />
+     <Compile Include="Assets\Animations\InvButton.cs" />
      <Compile Include="Assets\Animations\WolfWalking\Wolfanimation.cs" />
      <Compile Include="Assets\Entities\Entity.cs" />
      <Compile Include="Assets\Entities\Objects\PickBullet.cs" />
@@ -113,7 +114,7 @@
      <Compile Include="Assets\Quests\QuestObjective.cs" />
      <Compile Include="Assets\Quests\QuestText.cs" />
      <Compile Include="Assets\Quests\Test.cs" />
-     <Compile Include="Assets\Scenes\TitleScreen.cs" />
+     <Compile Include="Assets\Scenes\TitleScreen\TitleScreen.cs" />
      <Compile Include="Assets\Texts\ActivateText.cs" />
      <Compile Include="Assets\Texts\TextBoxManager.cs" />
      <Compile Include="Assets\Texts\TextImporter.cs" />
