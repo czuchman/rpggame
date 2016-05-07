@@ -102,10 +102,14 @@ public class TextBoxManager : Entity {
 				endOfText = true;
 				currentLine = 0;
 				currentLine2 = 0;
+				endAtLine = 0;
 			}
 		}
 
 		if (endOfText) {
+			currentLine = 0;
+			currentLine2 = 0;
+			endAtLine = 0;
 			playerr.GetComponent<Test> ().enabled = true;
 			//playerr.GetComponent<Test> ().
 			endOfText = false;
@@ -115,11 +119,13 @@ public class TextBoxManager : Entity {
 
 
 	public void EnableTextBox(){
+		currentLine = 0;
+		currentLine2 = 0;
 		textBox.SetActive (true);
 		isActive = true;
 
 		if (stopPlayerMovement) {
-			//print ("stop movement");
+			print ("stop movement");
 			player.stopMoving();
 			//player.canMove = false;
 		}

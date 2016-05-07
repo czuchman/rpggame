@@ -19,6 +19,8 @@ public class ActivateText : MonoBehaviour {
 
 	public bool destroyWhenActivated;
 
+	public int nbText;
+
 
 	// Use this for initialization
 	void Start () {
@@ -63,7 +65,7 @@ public class ActivateText : MonoBehaviour {
 			theTextBox.endAtLine = endLine;
 			theTextBox.EnableTextBox ();
 
-			if (destroyWhenActivated) {
+			if (destroyWhenActivated && (currentTextID > 2)) {
 				Destroy (gameObject);
 			}
 		}
@@ -91,8 +93,12 @@ public class ActivateText : MonoBehaviour {
 		currentTextID++;
 
 		theTextBox.ReloadScript (currentText);
-		theTextBox.currentLine = startLine;
-		theTextBox.endAtLine = endLine;
+		//theTextBox.currentLine = startLine;
+		//theTextBox.endAtLine = endLine;
 		theTextBox.EnableTextBox ();
+
+		if (destroyWhenActivated && (currentTextID > nbText)) {
+			Destroy (gameObject);
+		}
 	}
 }
