@@ -4,72 +4,41 @@ using System.Collections;
 public class Wolfanimation : MonoBehaviour {
 
 
-	public Animator anim;
+    public Animator anim;
 
-	public Vector2 old_pos;
+ //   public Vector2 position;
+
+ //   private float heading;
+
+  //  private MovingMob2 data; 
 
 	void Start () {
-		anim = GetComponent<Animator> ();
-		old_pos.x = anim.transform.position.x;
-		old_pos.y = anim.transform.position.y;
 
-	}
+//position.x = data.x;
+    //    position.y = data.y; 
+    }
 
 
 	void Update () 
 	{
 
-		if (old_pos.x < anim.transform.position.x)
-		{
-			anim.SetBool("Right", true);
-			anim.SetBool("Up", false);
-			anim.SetBool("Down", false);
-			anim.SetBool("Left", false);
-		}
+        //.x = old_position.x - new_position.x;
+        // new_position.y = old_position.y - new_position.y;
+        //   heading = Mathf.Atan2(anim.transform.position.x, anim.transform.position.y) * Mathf.Rad2Deg;
 
-		else anim.SetBool("Right", false);
+ //       position.x = data.x;
+//position.y = data.y;
 
-		if (old_pos.x > anim.transform.position.x)
-		{
+        //heading = Quaternion.LookRotation(position).eulerAngles.y
 
-			anim.SetBool("Left", true);
-			anim.SetBool("Up", false);
-			anim.SetBool("Down", false);
-			anim.SetBool("Right", false);
+     //   heading = Mathf.Atan2(data.x, data.y) * Mathf.Rad2Deg;
 
-		}
+     //   Debug.Log("Heading: " + heading);
 
-		else anim.SetBool("Down", false);
+       // anim.SetFloat("Heading", heading);
 
-	
-		if (old_pos.y < anim.transform.position.y)
-		{
-			anim.SetBool("Up", true);
-			anim.SetBool("Down", false);
-			anim.SetBool("Right", false);
-			anim.SetBool("Left", false);
-		}
+       // Debug.Log("X: " + new_position.x);
+      //  Debug.Log("Y: " + new_position.y);
 
-		else anim.SetBool("Up", false);
-
-
-		if (old_pos.y > anim.transform.position.y)
-		{
-
-			anim.SetBool("Down", true);
-			anim.SetBool("Right", false);
-			anim.SetBool("Left", false);
-			anim.SetBool("Up", false);
-
-		}
-
-		else anim.SetBool("Left", false);
-
-
-
-		old_pos.x = anim.transform.position.x;
-		old_pos.y = anim.transform.position.y;
-
-
-	}
+    }
 }

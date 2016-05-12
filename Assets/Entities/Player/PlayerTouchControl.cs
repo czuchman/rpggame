@@ -13,6 +13,8 @@ public class PlayerTouchControl : Entity
 
 	public Vector3 pos;
 
+    public float x, y; 
+
 
 	public GameObject EnergyBarr;
 	public Entity EnergyBar;
@@ -48,7 +50,14 @@ public class PlayerTouchControl : Entity
 		if (canMove) {
 			Vector2 movement = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal"), CrossPlatformInputManager.GetAxis ("Vertical")) * playerspeed;
 			playercharacter.transform.Translate (movement);
-		}
+
+            x = movement.x * 1000 ;
+            y = movement.y * 1000 ;
+
+           
+
+
+        }
 
 		if (pos != transform.position) {
 			isWalking = true;
