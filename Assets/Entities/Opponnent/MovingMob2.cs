@@ -107,12 +107,17 @@ public class MovingMob2 : Entity
 
 	public void attackEntity(){
 		int take = Random.Range (1, 20);
-		attacking.takeHealth (take);
-		healthBar.takeHealth (take);
+        //attacking.takeHealth (take);
+        //healthBar.takeHealth (take);
 
-	}
+        attacking.GetComponent<PlayerInventory>().currentHealth = -take;
+      
 
-	IEnumerator waitForAttack(){
+
+
+    }
+
+    IEnumerator waitForAttack(){
 
 		canAttack = false;
 		yield return new WaitForSeconds (2);

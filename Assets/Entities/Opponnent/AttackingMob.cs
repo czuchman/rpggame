@@ -16,7 +16,8 @@ public class AttackingMob : Entity {
 		if (attackingg == null) {
 			attackingg = GameObject.FindGameObjectWithTag ("Player");
 			attacking = attackingg.GetComponent<Entity>();
-		}
+
+        }
 	}
 	
 	// Update is called once per frame
@@ -40,7 +41,10 @@ public class AttackingMob : Entity {
 
 	public void attackEntity(){
 		int take = Random.Range (1, 20);
-		attacking.takeHealth (take);
+        //attacking.takeHealth (take);
+        float Target = attackingg.GetComponent<PlayerInventory>().currentHealth;
+          Target =- take; 
+       
 	}
 
 	IEnumerator waitForAttack(){
