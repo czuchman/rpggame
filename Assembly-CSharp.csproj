@@ -48,6 +48,7 @@
      <Compile Include="Assets\Animations\HPcontroller.cs" />
      <Compile Include="Assets\Animations\InvButton.cs" />
      <Compile Include="Assets\Animations\WolfWalking\Wolfanimation.cs" />
+     <Compile Include="Assets\BackToMenu.cs" />
      <Compile Include="Assets\Entities\Entity.cs" />
      <Compile Include="Assets\Entities\Objects\PickBullet.cs" />
      <Compile Include="Assets\Entities\Objects\Pill.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\Entities\Opponnent\MovingMob2.cs" />
      <Compile Include="Assets\Entities\Player\Player.cs" />
      <Compile Include="Assets\Entities\Player\PlayerAnimation.cs" />
+     <Compile Include="Assets\Entities\Player\PlayerDeath.cs" />
      <Compile Include="Assets\Entities\Player\PlayerFollowMouse.cs" />
      <Compile Include="Assets\Entities\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Entities\Player\PlayerTouchControl.cs" />

@@ -12,17 +12,21 @@ public class PickUpItem : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         if (_player != null)
             _inventory = _player.GetComponent<PlayerInventory>().inventory.GetComponent<Inventory>();
-    }
+       // else Debug.Log("Inventory problemo!");
+    } 
 
     void OnMouseDown()
     {
-        if (_inventory != null)
+       // _player = GameObject.FindGameObjectWithTag("Player");
+       // _inventory = _player.GetComponent<PlayerInventory>().inventory.GetComponent<Inventory>();
+
+       if (this._inventory != null)
         {
             float distance = Vector3.Distance(this.gameObject.transform.position, _player.transform.position);
 
             if (distance <= 2)
         {
-            bool check = _inventory.checkIfItemAllreadyExist(item.itemID, item.itemValue);
+                bool check = _inventory.checkIfItemAllreadyExist(item.itemID, item.itemValue);
             if (check)
                 Destroy(this.gameObject);
             else if (_inventory.ItemsInInventory.Count < (_inventory.width * _inventory.height))
@@ -32,9 +36,10 @@ public class PickUpItem : MonoBehaviour
                 _inventory.stackableSettings();
                 Destroy(this.gameObject);
             }
-
+            
         }
-    }
+             Debug.Log("A dupa tam");
+        }
 }
 
     // Update is called once per frame
