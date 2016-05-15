@@ -7,6 +7,8 @@ public class SpawnObject : MonoBehaviour {
 	public GameObject prefab;
 	public bool canSpawn = true;
 
+	public float x;
+	public float y;
 
 
 
@@ -21,8 +23,8 @@ public class SpawnObject : MonoBehaviour {
 		
 		if (canSpawn) {
 
-			float x = Random.Range (-5.0F, 5.0F);
-			float y = Random.Range (-5.0F, 5.0F);
+			x = Random.Range (x-10, x+10);
+			y = Random.Range (y-10, y+10);
 
 			Vector2 position = new Vector2 (x, y);
 

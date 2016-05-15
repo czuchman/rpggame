@@ -1,6 +1,5 @@
-C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
-C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\Assembly-CSharp.dll
-C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEditor.dll
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEngine.dll
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEngine.Networking.dll
@@ -17,6 +16,6 @@ C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEngine.xml
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEditor.xml
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEngine.UI.xml
 C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\UnityEngine.Networking.xml
-C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp.dll
-C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp.pdb
-C:\Users\Romain\Documents\GitHub\rpggame\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Romain\Documents\GitHub\rpggame\obj\Debug\Assembly-CSharp-firstpass.pdb

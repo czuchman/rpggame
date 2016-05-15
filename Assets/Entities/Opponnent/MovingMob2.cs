@@ -64,7 +64,7 @@ public class MovingMob2 : Entity
         {
             transform.position = Vector3.MoveTowards(transform.position, CollisionTarget.transform.position, 0.04F);
 
-			if (Vector2.Distance (GetComponent<Rigidbody2D>().transform.position, attacking.transform.position) <= distance && canAttack) {
+			if (Vector2.Distance (GetComponent<Rigidbody2D>().transform.position, attacking.transform.position) <= 1 && canAttack) {
 				attackEntity ();
 				StartCoroutine (waitForAttack ());
 			}
