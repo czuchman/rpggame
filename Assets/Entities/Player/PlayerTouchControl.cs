@@ -59,9 +59,11 @@ public class PlayerTouchControl : Entity
 
         }
 
-		if (pos != transform.position) {
-			isWalking = true;
-		}
+        if (pos != transform.position)
+        {
+            isWalking = true;
+        }
+        else isWalking = false; 
 
 
 		if (!canMove) {
@@ -88,8 +90,7 @@ public class PlayerTouchControl : Entity
 
 	void loseEnergy(int amount){
 
-		EnergyBar.takeEnergy (amount);
-
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().currentEnergy -= amount; 
 	}
 
 

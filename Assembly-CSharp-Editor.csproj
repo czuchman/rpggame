@@ -68,6 +68,7 @@
      <None Include="Assets\Texts\textFile.txt" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\shelter.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Texts\FirstQuest.txt" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
@@ -80,6 +81,7 @@
      <None Include="Assets\Tiled2Unity\License.txt" />
      <None Include="Assets\Tiled2Unity\Imported\Forrest.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\testmap.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\ForrestV2.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
  <Reference Include="UnityEditor.Advertisements">
@@ -119,8 +121,6 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{5FF01FB4-880E-1095-0F0B-6E264F71EDC0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{FB47C93F-FE21-5D6E-40D1-9A5018F91797}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

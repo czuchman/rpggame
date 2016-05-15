@@ -28,11 +28,11 @@ public class HPcontroller : Entity {
 
        // Debug.Log(playerhealth);
 
-		tmpEnergy = energy/100;
-		Energybar.fillAmount = tmpEnergy;
+		//tmpEnergy = energy/100;
+		Energybar.fillAmount = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().currentEnergy / 100;
 
 
-	}
+    }
 
 	public void changeHealth(float health)
 

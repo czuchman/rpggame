@@ -4,7 +4,7 @@
 public class MovingMob2 : Entity
 {
 
-    public Vector2 farEnd;
+   // public Vector2 farEnd;
     private Vector2 frometh;
     private Vector2 untoeth;
     private float secondsForOneLength = 5f;
@@ -25,20 +25,23 @@ public class MovingMob2 : Entity
 
 	public int distance;
 
-	public int x;
-	public int y;
-
 
 	private bool canAttack;
 
     void Start()
     {
-		farEnd.x = x;
-        farEnd.y = y;
+		//farEnd.x = transform.position.x + Random.Range(-distance, distance);
+      // farEnd.y = transform.position.y + Random.Range(-distance, distance);
         frometh = transform.position;
-        untoeth = farEnd;
 
-		canAttack = true;
+        untoeth.x = frometh.x + Random.Range(-distance, distance);
+        untoeth.y = frometh.y + Random.Range(-distance, distance);
+
+        //frometh.x = transform.position.x + Random.Range(-distance, distance);
+        //frometh.y = transform.position.y + Random.Range(-distance, distance);
+
+
+        canAttack = true;
 		if (attackingg == null) {
 			attackingg = GameObject.FindGameObjectWithTag ("Player");
 			attacking = attackingg.GetComponent<Entity>();
@@ -53,6 +56,9 @@ public class MovingMob2 : Entity
 
     void Update()
     {
+
+      
+
         //transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Player").transform.position, 0.05F);
         if (StartFollow)
         {
@@ -110,7 +116,7 @@ public class MovingMob2 : Entity
         //attacking.takeHealth (take);
         //healthBar.takeHealth (take);
 
-        attacking.GetComponent<PlayerInventory>().currentHealth = -take;
+        attacking.GetComponent<PlayerInventory>().currentHealth -= take;
       
 
 

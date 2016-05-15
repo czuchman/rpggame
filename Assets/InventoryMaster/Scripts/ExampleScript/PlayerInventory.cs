@@ -24,12 +24,12 @@ public class PlayerInventory : MonoBehaviour
     Image manaImage;
 
     float maxHealth = 100;
-    float maxMana = 100;
+    float maxEnergy = 100;
     float maxDamage = 0;
     float maxArmor = 0;
 
-    public float currentHealth = 60;
-    float currentMana = 100;
+    public float currentHealth = 100;
+    public float currentEnergy = 100;
     float currentDamage = 0;
     float currentArmor = 0;
 
@@ -212,12 +212,12 @@ public class PlayerInventory : MonoBehaviour
                 else
                     currentHealth += item.itemAttributes[i].attributeValue;
             }
-            if (item.itemAttributes[i].attributeName == "Mana")
+            if (item.itemAttributes[i].attributeName == "Energy")
             {
-                if ((currentMana + item.itemAttributes[i].attributeValue) > maxMana)
-                    currentMana = maxMana;
+                if ((currentEnergy + item.itemAttributes[i].attributeValue) > maxEnergy)
+                    currentEnergy = maxEnergy;
                 else
-                    currentMana += item.itemAttributes[i].attributeValue;
+                    currentEnergy += item.itemAttributes[i].attributeValue;
             }
             if (item.itemAttributes[i].attributeName == "Armor")
             {
@@ -247,8 +247,8 @@ public class PlayerInventory : MonoBehaviour
         {
             if (item.itemAttributes[i].attributeName == "Health")
                 maxHealth += item.itemAttributes[i].attributeValue;
-            if (item.itemAttributes[i].attributeName == "Mana")
-                maxMana += item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "Energy")
+                maxEnergy += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Armor")
                 maxArmor += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Damage")
@@ -267,8 +267,8 @@ public class PlayerInventory : MonoBehaviour
         {
             if (item.itemAttributes[i].attributeName == "Health")
                 maxHealth -= item.itemAttributes[i].attributeValue;
-            if (item.itemAttributes[i].attributeName == "Mana")
-                maxMana -= item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "Energy")
+                maxEnergy -= item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Armor")
                 maxArmor -= item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Damage")
