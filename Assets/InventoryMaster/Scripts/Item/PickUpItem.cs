@@ -38,7 +38,7 @@ public class PickUpItem : MonoBehaviour
             }
             
         }
-             Debug.Log("A dupa tam");
+             Debug.Log("Pickup doesn't work but I have no idea why...");
         }
 }
 

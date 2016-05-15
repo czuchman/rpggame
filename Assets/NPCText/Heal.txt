@@ -1,0 +1,3 @@
+If you become injured your health will drop!
+You can see it in the upper left corner.
+Remember, if it goes down to zero you will die!
